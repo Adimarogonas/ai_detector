@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from ipywidgets import interact
 from sklearn.metrics import log_loss, confusion_matrix
-
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
 import pickle
 def save_model(filename)
     # Save the model to a file
@@ -54,10 +55,6 @@ fig = plt.figure()
 ax = plt.axes(projection='3d')
 ax.scatter3D(realX,realZ,realY, c=realZ, cmap='Greens')
 ax.scatter3D(fakeX, fakeZ,fakeY, c=fakeZ, cmap='Reds')
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-
 
 real_data = []
 fake_data = []
