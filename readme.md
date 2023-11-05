@@ -20,5 +20,7 @@ System Requirements:
     - at least 10gb of ram
     - While this runs on CPU a GPU is recommended
     - python
+    - torch was built using a CPU version for linux for python 3.10.
+    if you use a different version of python or operating system you will have to change requirements.txt
     - A virtual environment is recommended for dependencies
     - Installing dependencies may be better with Anaconda 
