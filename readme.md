@@ -1,13 +1,20 @@
 Welcome to Huxli's Open Source AI Detector!
 
 quick tour:
+
     - Detector.py - where we run our model and predictions, calculate perplexity   
+    
     - gather_data.py - where we prepare our dataset for model training
+    
     - train_model.py - where we actually run our model
+    
     - runPrediction.py - where you can actually use this data
+    
     - model-5.pkl - our serialized Model, you can replace this with your own!
+    
     - results_1.csv - relevant data for training a model
-    - calculated.csv - contains our real and fake passages. values here are outdated and it is not recommended to use them with provided models(will be very         inaccurate)
+    
+    - calculated.csv - contains our real and fake passages. values here are outdated and it is not recommended to use them with provided models(will be very inaccurate)
 
 Getting Started:
 
@@ -16,6 +23,7 @@ Getting Started:
 3. run `python3 runPrediction.py`
 
 System Requirements:
+
     - At least 3gb of disk space
     - at least 10gb of ram
     - While this runs on CPU a GPU is recommended
